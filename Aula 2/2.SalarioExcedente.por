@@ -1,6 +1,6 @@
 programa
 {
-	inteiro C, N, S, E, A
+	inteiro C, N, S, E
 	funcao inicio()
 	{
 		escreva("Digite o código do operário: ")
@@ -9,15 +9,14 @@ programa
 		leia(N)
 		se (N > 50){
 			S = (500)
-			E = N - 50
-			A = E * 20
+			E = (N - 50) * 20
 		}
 		senao{
 			S = (N * 10)
-			A = 0
+			E = 0
 		}
-		escreva("O salário total é de R$", S+A)
-		escreva("\nO salário excedente é de R$", A)
+		escreva("O salário total é de R$", S+E)
+		escreva("\nO salário excedente é de R$", E)
 		
 	}
 }
@@ -26,7 +25,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 276; 
+ * @POSICAO-CURSOR = 30; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
