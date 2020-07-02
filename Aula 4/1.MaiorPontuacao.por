@@ -1,16 +1,26 @@
 programa
 {
-	inteiro contador, soma
+	
 	funcao inicio()
-	{	
-		soma = 0
-		para (contador = 1; contador <= 500; contador++){
-			se (contador % 2 == 1 e contador % 3 == 0){
-				soma = soma + contador							
+	{
+		inteiro c = 0, pontuacoes[5], maior = 0
+		
+		para (c; c <5; c++){
+			escreva("Digite a ", c + 1 , "ª pontuação: ")
+			leia (pontuacoes[c])
+
+			se (pontuacoes[c] > maior){
+				maior = pontuacoes[c]
 			}
 		}
+
+		escreva("\nPontuações digitadas: ")
+		para (c = 0; c < 5; c++){
+			escreva(pontuacoes[c], "  ")
+		}
 		
-		escreva("A soma de todos os números ímpares que são múltiplos de três e que se encontram no conjunto dos números de 1 até 500 é de: ", soma)
+		escreva("\nMaior pontuação: ", maior)
+		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -18,7 +28,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 104; 
+ * @POSICAO-CURSOR = 145; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
